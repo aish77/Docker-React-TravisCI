@@ -6,4 +6,4 @@ before_install:
   - docker build -t aishwarydeath/docker-react-travis -f Dockerfile.dev .
 
 script:
-  - docker run aishwarydeath/docker-react-travis npm run -- --coverage 
+  - docker run aishwarydeath/docker-react-travis npm run test -- --coverage 
